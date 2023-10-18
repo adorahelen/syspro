@@ -5,13 +5,15 @@
 #define _IO _LINE_BUF 0x0200
 
 int main(int argc, char*argv[])
-{
+{ /*argc = count , argv = value : so this is all count 
+and save value */
+
 	FILE *fp;
-	if (!strcmp(argv[1], "stdin")) {
+	if (!strcmp(argv[1], "stdin")) { /*strcmp == string compare function*/
 		fp = stdin;
 		printf("Enter one letter:");
 		if (getchar() == EOF) perror("getchar");
-	}
+	} /*EOF == end of file ,   perror == error message function*/
 	else if (!strcmp(argv[1],"stdout"))
 		fp = stdout;
 	else if (!strcmp(argv[1], "stderr"))
