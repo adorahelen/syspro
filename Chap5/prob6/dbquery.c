@@ -29,7 +29,7 @@ printf("Name:%s\t StuID: %d\t Score:%d\n", record.name, record.id, record.score)
 } else printf("Input Error");
 printf("Continue?(Y/N)");
 scanf("%c", &c);
-} while (c == 'Y');
+} while (c =='Y');
 close(fd);
 exit(0);
 }
