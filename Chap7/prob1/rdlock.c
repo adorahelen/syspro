@@ -37,7 +37,7 @@ int main (int argc, char*argv[])
  if ((read(fd, (char *) &record, sizeof(record)) > 0) && (record.id != 0)) 
   printf("Name:%\t StuID:%d\t Score:%d\n", record.name, record.id, 
 record.score); 
- else printf("No record %d \n"m id);
+ else printf("No record %d \n", id);
  
 lock.l_type = F_UNLCK;
 fcntl(fd, F_SETLK, &lock);
