@@ -1,2 +1,3 @@
-# syspro
-git test
+# sysprog
+# 3학년 2학기, 시스템프로그래밍 수업을 위한 저장소
+## 리눅스 기반 환경 (WSL2), GCC 컴파일 
